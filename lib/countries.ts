@@ -16,7 +16,7 @@ export class CountrySearchError extends Error {
 
 // `/name` is the API's name aggregate (common, official, alternates, native names).
 // It gives cleaner typeahead matches than the free-text `?q=` on the root endpoint.
-const BASE_URL = 'https://api.restcountries.com/countries/v5';
+const BASE_URL = 'https://api.restcountries.com/countries/v5/name';
 
 // Tiny in-memory cache: the free plan is capped at 500 requests/month.
 const cache = new Map<string, Country[]>();
